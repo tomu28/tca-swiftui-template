@@ -1,0 +1,14 @@
+opt_in_rules:
+  - sorted_imports
+
+disabled_rules:
+  - function_body_length
+  - trailing_comma
+  - identifier_name
+
+excluded:
+  - .build
+  - "*/.build"
+  - .swiftpm
+  - Package.swift
+#  - Sources/Proto
