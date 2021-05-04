@@ -1,5 +1,3 @@
-SWIFT_BUILD_PRODUCT=swift build -c release --package-path Tools --product
-SWIFT_RUN=swift run -c release --package-path Tools
 SWIFT_BUILD_OUT:=./Tools/.build/release
 GRPC_OUT:=./Sources/Proto
 WORKSPACE=TCASwiftUITemplateApp.xcworkspace
@@ -42,6 +40,14 @@ proto:
 	    --swift_opt FileNaming=DropPath
 
 # Tools
+# Package build	
+.PHONY: package-build	
+package-build:	
+	$(SWIFT_BUILD)	
+.PHONY: package-build-ci	
+package-build-ci:	
+	$(SWIFT_BUILD_PRODUCT) swiftlint	
+	$(SWIFT_BUILD_PRODUCT) swiftformat
 
 # SwiftFormat
 .PHONY: run-swiftformat
