@@ -2,7 +2,7 @@ SWIFT_BUILD_PRODUCT=swift build -c release --package-path Tools --product
 SWIFT_RUN=swift run -c release --package-path Tools
 SWIFT_BUILD_OUT:=./Tools/.build/release
 GRPC_OUT:=./Sources/Proto
-WORKSPACE=TrainingApp.xcworkspace
+WORKSPACE=TCASwiftUITemplateApp.xcworkspace
 
 export PATH += :$(SWIFT_BUILD_OUT)
 
