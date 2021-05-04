@@ -1,0 +1,5 @@
+--exclude \
+  .build, \
+  .swiftpm, \
+  Sources/Proto, \
+  Package.swift

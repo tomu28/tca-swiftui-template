@@ -1,0 +1,50 @@
+@startuml App Structure
+
+title App Structure
+
+package Features {
+  [SwiftUIView]
+  node Feature {
+    [Action]
+    [Reducer]
+    [Environment]
+    [State]
+  }
+}
+
+package Proto {
+  [Generated Proto files...]
+}
+
+package Utility {
+  [Extensions...]
+  [Others...]
+}
+
+package ImageLoader {
+  [Nuke Extension]
+}
+
+package Auth {
+  (Auth <<Interface>>)
+  [FirebaseAuth]
+}
+
+package Repository {
+  (Repository<I>)
+  [RepositoryImpl]
+}
+
+App --> [SwiftUIView]
+SwiftUIView --> [Action]
+[Environment] --> [Repository<I>]
+[Environment] --> ImageLoader
+[Reducer] --> [Repository<I>]
+[Reducer] --> ImageLoader
+Features ---> Utility
+RepositoryImpl .> [Repository<I>]
+RepositoryImpl --> Proto
+RepositoryImpl --> [Auth <<Interface>>]
+FirebaseAuth .> [Auth <<Interface>>]
+
+@enduml

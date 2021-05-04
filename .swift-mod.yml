@@ -1,0 +1,21 @@
+format:
+  indent: 4
+  lineBreakBeforeEachArgument: true
+targets:
+  main:
+    paths:
+      - App
+    rules:
+      defaultAccessLevel:
+        accessLevel: internal
+        implicitInternal: true
+  module:
+    paths:
+      - Sources
+    excludedPaths:
+      - 'Sources/Proto'
+    rules:
+      defaultAccessLevel:
+        accessLevel: openOrPublic
+      defaultMemberwiseInitializer:
+        ignoreClassesWithInheritance: true

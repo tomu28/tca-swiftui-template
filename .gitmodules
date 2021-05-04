@@ -1,0 +1,3 @@
+[submodule "proto"]
+	path = proto
+	url = git@github.com:CyberAgentHack/21fresh_j_proto.git
