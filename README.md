@@ -7,8 +7,22 @@
 ツール・サブモジュールの準備は↓を叩いてください。
 
 ```sh
-make setup
+$ make setup
 ```
+
+### `TCASwiftUITemplateApp.xcworkspace`名の変更
+
+```sh
+$ mv TCASwiftUITemplateApp.xcworkspace/ XXXApp.xcworkspace/
+$ rm -rf TCASwiftUITemplateApp.xcworkspace
+```
+
+`Makefile`のWORKSPACE名を変更
+
+- Before
+  - `WORKSPACE=TCASwiftUITemplateApp.xcworkspace`
+- After
+  - `WORKSPACE=XXXApp.xcworkspace`
 
 ## 開発の仕方
 
@@ -17,7 +31,7 @@ make setup
 `swift package generate-xcodeproj` を叩く必要はありません。
 
 ```sh
-make open
+$ make open
 ```
 
 ### 依存関係の追加の仕方
@@ -38,7 +52,7 @@ CocoaPods については未検証のため、検証した際は追記します�
 #### ソースコードのフォーマット
 
 ```
-make run-format
+$ make run-format
 ```
 
 [swiftformat](https://github.com/nicklockwood/SwiftFormat)と[swift-mod](https://github.com/taoshotaro/swift-mod/tree/update-deps)に従いフォーマットが適用されます。
