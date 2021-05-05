@@ -7,13 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8A63B862642917500CDAD5F /* AppFeature in Embed Frameworks */ = {isa = PBXBuildFile; productRef = E856248D26240B5E0032A6A1 /* AppFeature */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		E85624692623491A0032A6A1 /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85624682623491A0032A6A1 /* MainApp.swift */; };
 		E856246D2623491A0032A6A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E856246C2623491A0032A6A1 /* Assets.xcassets */; };
 		E85624702623491A0032A6A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E856246F2623491A0032A6A1 /* Preview Assets.xcassets */; };
 		E856248E26240B5E0032A6A1 /* AppFeature in Frameworks */ = {isa = PBXBuildFile; productRef = E856248D26240B5E0032A6A1 /* AppFeature */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D8A63B872642917500CDAD5F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D8A63B862642917500CDAD5F /* AppFeature in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D8A63B33264285EE00CDAD5F /* UICatalogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICatalogTests.swift; sourceTree = "<group>"; };
+		D8A63B35264285EE00CDAD5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8A63B3E264285EE00CDAD5F /* UICatalogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICatalogUITests.swift; sourceTree = "<group>"; };
+		D8A63B40264285EE00CDAD5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E85624652623491A0032A6A1 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E85624682623491A0032A6A1 /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
 		E856246C2623491A0032A6A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,10 +52,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D8A63B32264285EE00CDAD5F /* UICatalogTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8A63B33264285EE00CDAD5F /* UICatalogTests.swift */,
+				D8A63B35264285EE00CDAD5F /* Info.plist */,
+			);
+			path = UICatalogTests;
+			sourceTree = "<group>";
+		};
+		D8A63B3D264285EE00CDAD5F /* UICatalogUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D8A63B3E264285EE00CDAD5F /* UICatalogUITests.swift */,
+				D8A63B40264285EE00CDAD5F /* Info.plist */,
+			);
+			path = UICatalogUITests;
+			sourceTree = "<group>";
+		};
 		E856245C2623491A0032A6A1 = {
 			isa = PBXGroup;
 			children = (
 				E85624672623491A0032A6A1 /* App */,
+				D8A63B32264285EE00CDAD5F /* UICatalogTests */,
+				D8A63B3D264285EE00CDAD5F /* UICatalogUITests */,
 				E85624662623491A0032A6A1 /* Products */,
 				E856247B26234A080032A6A1 /* Frameworks */,
 			);
@@ -87,6 +126,7 @@
 				E85624612623491A0032A6A1 /* Sources */,
 				E85624622623491A0032A6A1 /* Frameworks */,
 				E85624632623491A0032A6A1 /* Resources */,
+				D8A63B872642917500CDAD5F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -106,7 +146,7 @@
 		E856245D2623491A0032A6A1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1230;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					E85624642623491A0032A6A1 = {
