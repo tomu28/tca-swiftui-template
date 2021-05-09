@@ -26,8 +26,13 @@ $ rm -rf TCASwiftUITemplateApp.xcworkspace
 
 ### `Bundle Identifier`名の変更
 
+#### App TARGETS
 `App TARGETS` → `Signing & Capabilities` → `Bundle Identifier`より  
 `template.App`となっているので任意の名前に変更してください。
+
+#### UICatalog TARGETS
+`UICatalog TARGETS` → `Signing & Capabilities` → `Bundle Identifier`より  
+`template.UICatalog`となっているので任意の名前に変更してください。
 
 ## 開発の仕方
 
