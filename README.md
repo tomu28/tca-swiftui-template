@@ -27,16 +27,19 @@ $ rm -rf TCASwiftUITemplateApp.xcworkspace
 ### `Bundle Identifier`名の変更
 
 #### App TARGETS
+
 `App TARGETS` → `Signing & Capabilities` → `Bundle Identifier`より  
 `template.App`となっているので任意の名前に変更してください。
 
 #### UICatalog TARGETS
+
 `UICatalog TARGETS` → `Signing & Capabilities` → `Bundle Identifier`より  
 `template.UICatalog`となっているので任意の名前に変更してください。
 
 ## 開発の仕方
 
 ### 開発環境の開き方
+
 ↓のコマンドを叩くことで Xcode プロジェクトを開くことができます。
 `swift package generate-xcodeproj` を叩く必要はありません。
 
@@ -47,14 +50,17 @@ $ make open
 ### 依存関係の追加の仕方
 
 #### Swift Package Manager
+
 新しくライブラリを追加したくなった場合は、 Xcode プロジェクトを開いた際サイドバーに `AppPackage/Package.swift` のファイルが見えるかと思いますのでそちらを開き、  `packages` に追加してください。
 それ以降は各ライブラリで紹介されている方法に従ってください。
 
 #### Carthage
+
 プロジェクトルートにある `Cartfile` に依存関係を追加し、 `carthage update ...` コマンドを `--use-xcframeworks` オプション付きで実行してください。
 追加した後、`AppPackage/Package.swift` の中の `targets` に `.binaryTarget(...)` を使用して作成した xcframework をターゲットに追加します。
 
 #### CocoaPods
+
 CocoaPods については未検証のため、検証した際は追記します。
 
 ### 開発ルール
@@ -73,6 +79,7 @@ PR作成前に実行してください。
 ブランチ間で依存関係の変更があった際、conflictを減らすことが目的
 
 **Do:**
+
 ```swift
 import AppFeature
 import Combine
@@ -81,6 +88,7 @@ import SwiftUI
 ```
 
 **Don't:**
+
 ```swift
 import SwiftUI
 import Combine
@@ -89,12 +97,8 @@ import Foundation
 import AppFeature
 ```
 
-#### PRレビューに関して
-
-本リポジトリでは[`Pull request auto-merge`](https://docs.github.com/en/github/administering-a-repository/managing-auto-merge-for-pull-requests-in-your-repository)が有効になっています。
-1approveでMergeされ、作業元branchが削除されます。
-
 ## 使用技術
+
 - [kean/Nuke](https://github.com/kean/Nuke)
 - [firebase/firebase-ios-sdk](https://github.com/firebase/firebase-ios-sdk)
 - [pointfreeco/swift-composable-architecture](https://github.com/pointfreeco/swift-composable-architecture)
