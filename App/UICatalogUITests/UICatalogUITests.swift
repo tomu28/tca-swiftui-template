@@ -1,10 +1,3 @@
-//
-//  UICatalogUITests.swift
-//  UICatalogUITests
-//
-//  Created by 小幡 十矛 on 2021/05/05.
-//
-
 import XCTest
 
 class UICatalogUITests: XCTestCase {
