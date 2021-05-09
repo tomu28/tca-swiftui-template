@@ -24,6 +24,11 @@ $ rm -rf TCASwiftUITemplateApp.xcworkspace
 - After
   - `WORKSPACE=XXXApp.xcworkspace`
 
+### `Bundle Identifier`名の変更
+
+`App TARGETS` → `Signing & Capabilities` → `Bundle Identifier`より  
+`template.App`となっているので任意の名前に変更してください。
+
 ## 開発の仕方
 
 ### 開発環境の開き方
