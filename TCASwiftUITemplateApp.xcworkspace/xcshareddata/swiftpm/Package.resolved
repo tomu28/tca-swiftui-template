@@ -101,6 +101,15 @@
         }
       },
       {
+        "package": "Playbook",
+        "repositoryURL": "https://github.com/taoshotaro/playbook-ios",
+        "state": {
+          "branch": "remove-valid-archs",
+          "revision": "1b86094cb587ea3e555c51b036f51dd8cf651603",
+          "version": null
+        }
+      },
+      {
         "package": "Promises",
         "repositoryURL": "https://github.com/google/promises.git",
         "state": {
