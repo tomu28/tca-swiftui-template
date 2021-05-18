@@ -1,5 +1,11 @@
 # TCA-SwiftUI-Template
 
+## Version
+
+Xcode: 12.5  
+Swift: 5.4  
+iOS: 14.5
+
 ## Get Started
 
 ### 開発の準備
