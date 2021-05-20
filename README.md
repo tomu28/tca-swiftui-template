@@ -112,7 +112,7 @@ import AppFeature
 - [airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
 - [realm/SwiftLint](https://github.com/realm/SwiftLint)
 - [nicklockwood/SwiftFormat](https://github.com/nicklockwood/SwiftFormat)
-- [taoshotaro/swift-mod](https://github.com/taoshotaro/swift-mod/tree/update-deps)
+- [ra1028/swift-mod](https://github.com/ra1028/swift-mod)
 
 ## アプリアーキテクチャ
 
