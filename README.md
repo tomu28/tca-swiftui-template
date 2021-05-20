@@ -118,3 +118,7 @@ import AppFeature
 
 [pointfreeco/isowords](https://github.com/pointfreeco/isowords) を参考に作成しています。　
 ![architecture](./doc/images/app.png)
+
+---
+
+Special Thanks! [ry-itto](https://github.com/ry-itto)
